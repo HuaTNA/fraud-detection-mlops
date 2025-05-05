@@ -172,3 +172,12 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# ignore model files
+model/*.pkl
+
+# ignore data files
+data/
+
+# ignore jupyter logs
+.ipynb_checkpoints/
