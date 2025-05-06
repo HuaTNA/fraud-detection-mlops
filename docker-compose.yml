@@ -1,0 +1,15 @@
+services:
+  fastapi-service:
+    build: .
+    depends_on:
+      - mlflow-ui
+    environment:
+      - MLFLOW_TRACKING_URI=http://mlflow:5000
+    ports:
+      - "8000:8000"  
+
+  mlflow-ui:
+    image: ghcr.io/mlflow/mlflow
+    command: mlflow ui --host 0.0.0.0 --port 5000
+    ports:
+      - "5000:5000"

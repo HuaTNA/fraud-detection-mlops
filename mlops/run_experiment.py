@@ -6,19 +6,21 @@ from sklearn.metrics import accuracy_score, recall_score, confusion_matrix
 import pandas as pd
 import numpy as np
 from mlflow.models.signature import infer_signature
-import os
+
+
+mlflow.set_tracking_uri("file:/app/mlruns")
+mlflow.set_experiment("fraud") 
 
 def train_and_log_model():
-    # Set the tracking URI to a local directory
-    mlflow.set_tracking_uri("http://127.0.0.1:5000")
-    mlflow.set_experiment("fraud-detection-exp")
-
+    
     df = pd.read_csv("data/creditcard.csv")
     X = df.drop("Class", axis=1)
     y = df["Class"]
 
+    
     neg, pos = np.bincount(y)
     scale = neg / pos
+
 
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42, stratify=y
@@ -34,6 +36,7 @@ def train_and_log_model():
         )
 
         model.fit(X_train, y_train)
+
 
         preds = model.predict(X_test)
         acc = accuracy_score(y_test, preds)
