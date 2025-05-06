@@ -1,0 +1,13 @@
+pandas
+numpy
+scikit-learn
+xgboost
+joblib
+imbalanced-learn
+fastapi
+uvicorn
+scikit-learn
+xgboost
+joblib
+numpy
+flask
