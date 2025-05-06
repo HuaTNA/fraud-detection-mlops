@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1746555867898
+current_stage: None
+description: ''
+last_updated_timestamp: 1746555867898
+name: fraud-xgb
+run_id: 62b69d1644ae4a328415c79323e4221a
+run_link: ''
+source: models:/fraud-xgb/3
+status: READY
+status_message: null
+storage_location: file:///E:/Project/fraud-detection-mlops/fraud-detection-mlops/mlruns/553512011267247664/62b69d1644ae4a328415c79323e4221a/artifacts/xgb_model
+user_id: null
+version: 4

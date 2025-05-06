@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/Project/fraud-detection-mlops/fraud-detection-mlops/mlruns/553512011267247664/62b69d1644ae4a328415c79323e4221a/artifacts
+end_time: 1746555616252
+entry_point_name: ''
+experiment_id: '553512011267247664'
+lifecycle_stage: active
+run_id: 62b69d1644ae4a328415c79323e4221a
+run_name: persistent-snail-592
+run_uuid: 62b69d1644ae4a328415c79323e4221a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746555599572
+status: 3
+tags: []
+user_id: tanne

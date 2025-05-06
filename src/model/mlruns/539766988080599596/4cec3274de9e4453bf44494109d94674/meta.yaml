@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/Project/fraud-detection-mlops/fraud-detection-mlops/src/model/mlruns/539766988080599596/4cec3274de9e4453bf44494109d94674/artifacts
+end_time: 1746554077711
+entry_point_name: ''
+experiment_id: '539766988080599596'
+lifecycle_stage: active
+run_id: 4cec3274de9e4453bf44494109d94674
+run_name: indecisive-fawn-485
+run_uuid: 4cec3274de9e4453bf44494109d94674
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746554060921
+status: 3
+tags: []
+user_id: tanne

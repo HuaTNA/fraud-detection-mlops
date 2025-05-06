@@ -1,0 +1,6 @@
+artifact_location: file:///E:/Project/fraud-detection-mlops/fraud-detection-mlops/src/model/mlruns/539766988080599596
+creation_time: 1746553950775
+experiment_id: '539766988080599596'
+last_update_time: 1746553950775
+lifecycle_stage: active
+name: fraud-detection-exp

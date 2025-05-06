@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/Project/fraud-detection-mlops/fraud-detection-mlops/mlruns/553512011267247664/11d19dbee8e9486eb7e7ce4f3edbb8dc/artifacts
+end_time: 1746554415519
+entry_point_name: ''
+experiment_id: '553512011267247664'
+lifecycle_stage: active
+run_id: 11d19dbee8e9486eb7e7ce4f3edbb8dc
+run_name: luxuriant-trout-356
+run_uuid: 11d19dbee8e9486eb7e7ce4f3edbb8dc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746554399925
+status: 3
+tags: []
+user_id: tanne
