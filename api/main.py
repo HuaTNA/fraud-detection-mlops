@@ -1,36 +1,23 @@
-from flask import Flask, request, jsonify
-import joblib
-import pandas as pd
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
 import numpy as np
+import mlflow.pyfunc
 
+# Define FastAPI app
+app = FastAPI()
 
-app = Flask(__name__)
-model = joblib.load('../model/xgb_fraud_model.pkl')
-scaler = joblib.load('../model/scaler.pkl')
+# Load model from MLflow model registry (Production stage)
+model = mlflow.pyfunc.load_model("models:/fraud-xgb/Production")
 
-@app.route('/predict', methods=['POST'])
-def predict():
-    try:
-        data = request.json
-        features = data.get("features")
-        
-        if not features or len(features) != 29:
-            return jsonify({"error": "Input should be a list of 29 features."}), 400
-        
-        #normalize the input data to be 2D array
-        X = np.array(features).reshape(1, -1)
-        X[0, -1:] = scaler.transform([[X[0, -1]]])[0,0]
-        
-        prediction = model.predict(X)[0]
-        probability = model.predict_proba(X)[0, 1] 
-        return jsonify({
-            "prediction": int(prediction),
-            "probability": round(float(probability), 4)
-        })
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+# Input schema
+class Features(BaseModel):
+    features: list[float]
+
+@app.post("/predict")
+async def predict(input_data: Features):
+    if len(input_data.features) != 29:
+        raise HTTPException(status_code=400, detail="Input should be a list of 29 features.")
     
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
-
-        
+    X = np.array(input_data.features).reshape(1, -1)
+    prediction = model.predict(X)
+    return {"prediction": int(prediction[0])}

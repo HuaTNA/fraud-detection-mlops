@@ -1,0 +1,15 @@
+artifact_uri: file:///e:/Project/fraud-detection-mlops/fraud-detection-mlops/src/mlruns/0/f56390075abb4a6e9672a4f284d7f3ae/artifacts
+end_time: 1746551009925
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f56390075abb4a6e9672a4f284d7f3ae
+run_name: amusing-mink-369
+run_uuid: f56390075abb4a6e9672a4f284d7f3ae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746550991449
+status: 3
+tags: []
+user_id: tanne

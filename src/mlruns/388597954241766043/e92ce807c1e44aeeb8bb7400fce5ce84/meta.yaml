@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/Project/fraud-detection-mlops/fraud-detection-mlops/src/mlruns/388597954241766043/e92ce807c1e44aeeb8bb7400fce5ce84/artifacts
+end_time: 1746551856459
+entry_point_name: ''
+experiment_id: '388597954241766043'
+lifecycle_stage: active
+run_id: e92ce807c1e44aeeb8bb7400fce5ce84
+run_name: popular-kite-856
+run_uuid: e92ce807c1e44aeeb8bb7400fce5ce84
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746551847273
+status: 3
+tags: []
+user_id: tanne

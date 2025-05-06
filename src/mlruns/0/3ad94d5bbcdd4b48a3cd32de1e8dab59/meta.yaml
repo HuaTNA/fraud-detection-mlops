@@ -1,0 +1,15 @@
+artifact_uri: file:///e:/Project/fraud-detection-mlops/fraud-detection-mlops/src/mlruns/0/3ad94d5bbcdd4b48a3cd32de1e8dab59/artifacts
+end_time: 1746551771212
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3ad94d5bbcdd4b48a3cd32de1e8dab59
+run_name: rebellious-robin-802
+run_uuid: 3ad94d5bbcdd4b48a3cd32de1e8dab59
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746551761457
+status: 3
+tags: []
+user_id: tanne

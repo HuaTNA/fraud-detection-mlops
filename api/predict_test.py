@@ -1,16 +1,7 @@
 import requests
 
-url = "http://localhost:5000/predict"
+url = "http://127.0.0.1:8000/predict"
+features = [0.1] * 28 + [100]
+response = requests.post(url, json={"features": features})
 
-features = [0.1]* 28 + [100]
-
-payload = {
-    "features": features
-}
-
-response = requests.post(url, json=payload)
-
-if response.ok:
-    print("Prediction:", response.json())
-else:
-    print("Error:", response.status_code, response.text)
+print(response.json())
